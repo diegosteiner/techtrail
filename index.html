@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Techtrail - Diego's Blog
+title: - Diego's Blog
 ---
 <h1>{{ page.title }}</h1>
+<p>
+Somehow I had the feeling the world needs to know what I do, so here is another tech-blog with stuff other people found out years ago.
+</p>
 <ul class="articles">
-
   {% for article in site.posts %}
-    <li><span>{{ article.date | date_to_string }}</span> » <a href="{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a></li>
+    <li><span>{{ article.date | date_to_string }}</span> » <a href="/techtrail/{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a></li>
   {% endfor %}
 </ul>
