@@ -8,6 +8,6 @@ Somehow I had the feeling the world needs to know what I do, so here is another 
 </p>
 <ul class="articles">
   {% for article in site.posts %}
-    <li><span>{{ article.date | date_to_string }}</span> » <a href="/techtrail/{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a></li>
+    <li><span>{{ article.date | date_to_string }}</span> » <a href="/techtrail{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a></li>
   {% endfor %}
 </ul>
